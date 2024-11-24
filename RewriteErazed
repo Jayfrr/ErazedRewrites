@@ -1,0 +1,12 @@
+-- Decompiled MoonSec V3 protected script
+
+local HttpGet = function(url)
+    local response = game:HttpGet(url)
+    return response
+end
+
+local scriptUrl = 'https://raw.githubusercontent.com/Jayfrr/ErazedRewrite/refs/heads/main/ErazedAim'
+local scriptContent = HttpGet(scriptUrl)
+
+local executable = loadstring(scriptContent)
+executable()
